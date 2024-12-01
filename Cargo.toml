@@ -5,39 +5,39 @@ edition = "2021"
 
 [[bin]]
 name = "day1"
-path = "day-1/day-1.rs"
+path = "day-01/day-01.rs"
 
 [[bin]]
 name = "day2"
-path = "src/day-2.rs"
+path = "src/day-02.rs"
 
 [[bin]]
 name = "day3"
-path = "src/day-3.rs"
+path = "src/day-03.rs"
 
 [[bin]]
 name = "day4"
-path = "src/day-4.rs"
+path = "src/day-04.rs"
 
 [[bin]]
 name = "day5"
-path = "src/day-5.rs"
+path = "src/day-05.rs"
 
 [[bin]]
 name = "day6"
-path = "src/day-6.rs"
+path = "src/day-06.rs"
 
 [[bin]]
 name = "day7"
-path = "src/day-7.rs"
+path = "src/day-07.rs"
 
 [[bin]]
 name = "day8"
-path = "src/day-8.rs"
+path = "src/day-08.rs"
 
 [[bin]]
 name = "day9"
-path = "src/day-9.rs"
+path = "src/day-09.rs"
 
 [[bin]]
 name = "day10"

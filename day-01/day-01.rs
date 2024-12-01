@@ -3,7 +3,7 @@ use std::io;
 
 fn main() -> io::Result<()> {
 
-    let input = fs::read_to_string("day-1/data.txt").unwrap();
+    let input = fs::read_to_string("day-01/data.txt").unwrap();
 
     let mut col1: Vec<u32> = Vec::new();
     let mut col2: Vec<u32> = Vec::new();
