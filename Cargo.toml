@@ -9,96 +9,96 @@ path = "day-01/day-01.rs"
 
 [[bin]]
 name = "day2"
-path = "src/day-02.rs"
+path = "day-02/day-02.rs"
 
 [[bin]]
 name = "day3"
-path = "src/day-03.rs"
+path = "day-03/day-03.rs"
 
 [[bin]]
 name = "day4"
-path = "src/day-04.rs"
+path = "day-04/day-04.rs"
 
 [[bin]]
 name = "day5"
-path = "src/day-05.rs"
+path = "day-05/day-05.rs"
 
 [[bin]]
 name = "day6"
-path = "src/day-06.rs"
+path = "day-06/day-06.rs"
 
 [[bin]]
 name = "day7"
-path = "src/day-07.rs"
+path = "day-07/day-07.rs"
 
 [[bin]]
 name = "day8"
-path = "src/day-08.rs"
+path = "day-08/day-08.rs"
 
 [[bin]]
 name = "day9"
-path = "src/day-09.rs"
+path = "day-09/day-09.rs"
 
 [[bin]]
 name = "day10"
-path = "src/day-10.rs"
+path = "day-10/day-10.rs"
 
 [[bin]]
 name = "day11"
-path = "src/day-11.rs"
+path = "day-11/day-11.rs"
 
 [[bin]]
 name = "day12"
-path = "src/day-12.rs"
+path = "day-12/day-12.rs"
 
 [[bin]]
 name = "day13"
-path = "src/day-13.rs"
+path = "day-13/day-13.rs"
 
 [[bin]]
 name = "day14"
-path = "src/day-14.rs"
+path = "day-14/day-14.rs"
 
 [[bin]]
 name = "day15"
-path = "src/day-15.rs"
+path = "day-15/day-15.rs"
 
 [[bin]]
 name = "day16"
-path = "src/day-16.rs"
+path = "day-16/day-16.rs"
 
 [[bin]]
 name = "day17"
-path = "src/day-17.rs"
+path = "day-17/day-17.rs"
 
 [[bin]]
 name = "day18"
-path = "src/day-18.rs"
+path = "day-18/day-18.rs"
 
 [[bin]]
 name = "day19"
-path = "src/day-19.rs"
+path = "day-19/day-19.rs"
 
 [[bin]]
 name = "day20"
-path = "src/day-20.rs"
+path = "day-20/day-20.rs"
 
 [[bin]]
 name = "day21"
-path = "src/day-21.rs"
+path = "day-21/day-21.rs"
 
 [[bin]]
 name = "day22"
-path = "src/day-22.rs"
+path = "day-22/day-22.rs"
 
 [[bin]]
 name = "day23"
-path = "src/day-23.rs"
+path = "day-23/day-23.rs"
 
 [[bin]]
 name = "day24"
-path = "src/day-24.rs"
+path = "day-24/day-24.rs"
 
 [[bin]]
 name = "day25"
-path = "src/day-25.rs"
+path = "day-25/day-25.rs"
