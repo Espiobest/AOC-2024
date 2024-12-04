@@ -26,9 +26,7 @@ with open('data.txt', 'r') as r:
         for j in range(len(grid[0]) - 2):
             main = grid[i][j] + grid[i + 1][j + 1] + grid[i + 2][j + 2]
             off = grid[i][j + 2] + grid[i + 1][j + 1] + grid[i + 2][j]
-            if main == "MAS":
+            if main in ["MAS", "SAM"]:
                 p2 += off == "MAS" or off == "SAM"
-            elif main == "SAM":
-                p2 += off == "SAM" or off == "MAS"    
     
     print("Part 2:", p2)
