@@ -10,8 +10,8 @@ with open('data.txt', 'r') as r:
         elif "," in line:
             numbers.append([*map(int, line.split(","))])
     
-valid = []
-invalid = []
+valid = 0
+invalid = 0
 
 for n in numbers:
     ordered = True
@@ -21,14 +21,12 @@ for n in numbers:
                 ordered = False
 
     if ordered:
-        valid.append(n)
+        valid += n[len(n) // 2]
     else:
-        invalid.append(sorted(n, key=cmp_to_key(lambda x,y: 1 if [x,y] in rules else -1)))
+        incorrect = sorted(n, key=cmp_to_key(lambda x,y: 1 if [x,y] in rules else -1))
+        invalid += incorrect[len(incorrect) // 2]
 
 
-part1 = sum(x[len(x)//2] for x in valid)
-part2 = sum(x[len(x)//2] for x in invalid)
-
-print("Part 1:", part1)
-print("Part 2:", part2)
+print("Part 1:", valid)
+print("Part 2:", invalid)
 
