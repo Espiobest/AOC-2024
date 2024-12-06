@@ -11,14 +11,12 @@ for i in range(len(grid)):
 DIR = [(-1, 0), (0, 1), (1, 0), (0, -1)]  # N, E, S, W
 
 def path(grid, part2=False):
-    loop = True
     pos = set()
     visited = set()
     nx, ny = start
     cur_dir = 0
     while True:
         if nx < 0 or ny < 0 or nx >= len(grid) or ny >= len(grid[0]):
-            loop = False
             break
 
         if grid[nx][ny] != "#":
@@ -33,14 +31,14 @@ def path(grid, part2=False):
 
         nx, ny = (nx + DIR[cur_dir][0], ny + DIR[cur_dir][1])
 
-    return loop, pos
+    return pos
 
 
-_, pos = path(grid)
+pos = path(grid)
 part1 = len(pos)
 print("Part 1:", part1)
 
-changePos = set()
+part2 = 0
 # check all possible obstructions
 for x, y in pos:
     if (x, y) == start:
@@ -49,7 +47,6 @@ for x, y in pos:
     grid2 = [row[:] for row in grid]
     grid2[x][y] = "#"
     if path(grid2, part2=True) is None:
-        changePos.add((x, y))
+        part2 += 1
 
-part2 = len(changePos)
 print("Part 2:", part2)
