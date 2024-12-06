@@ -1,3 +1,5 @@
+from multiprocessing import Pool
+
 with open('data.txt', 'r') as r:
     grid = r.read().splitlines()
     grid = [list(row) for row in grid]
@@ -33,20 +35,26 @@ def path(grid, part2=False):
 
     return pos
 
-
-pos = path(grid)
-part1 = len(pos)
-print("Part 1:", part1)
-
-part2 = 0
-# check all possible obstructions
-for x, y in pos:
+def check_obstruction(pos, start, grid):
+    x, y = pos
     if (x, y) == start:
-        continue
+        return 0
 
     grid2 = [row[:] for row in grid]
     grid2[x][y] = "#"
     if path(grid2, part2=True) is None:
-        part2 += 1
+        return 1
 
-print("Part 2:", part2)
+    return 0
+
+if __name__ == "__main__":
+    pos = path(grid)
+    part1 = len(pos)
+    print("Part 1:", part1)
+    
+    part2 = 0
+    with Pool() as pool:
+        part2_results = pool.starmap(check_obstruction, [(p, start, grid) for p in pos])
+
+    part2 = sum(part2_results)
+    print("Part 2:", part2)
