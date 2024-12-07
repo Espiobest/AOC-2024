@@ -1,5 +1,6 @@
-import itertools
 import multiprocessing
+import itertools
+import math
 
 with open('data.txt', 'r') as r:
     lines = r.read().splitlines()
@@ -12,7 +13,7 @@ def solve(line, part2=False):
     operations = ['+', '*']
     if part2:
         operations.append('||')
-    ops = [*itertools.product(operations, repeat=l)]
+    ops = itertools.product(operations, repeat=l)
     
     for op in ops:
         res = nums[0]
@@ -22,7 +23,7 @@ def solve(line, part2=False):
             elif o == "*":
                 res *= nums[i+1]
             else:
-                res = int(str(res) + str(nums[i+1]))
+                res = res * 10**(math.floor(math.log10(nums[i+1])) + 1) + nums[i+1]
         if res == test_value:
             return test_value
 # 
