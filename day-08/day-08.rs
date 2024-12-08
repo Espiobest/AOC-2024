@@ -27,15 +27,13 @@ fn main() {
 
                 let dx = x2 - x1;
                 let dy = y2 - y1;
-
                 let mut x = x2 + dx;
                 let mut y = y2 + dy;
-
 
                 if x >= 0 && x < grid.len() as i32 && y >= 0 && y < grid[0].len() as i32 {
                     antinodes.insert((x, y));
                 }
-                
+
                 antinodes2.insert((x1, y1));
                 while x >= 0 && x < grid.len() as i32 && y >= 0 && y < grid[0].len() as i32 {
                     antinodes2.insert((x, y));
@@ -45,7 +43,6 @@ fn main() {
 
                 let dx2 = -dx;
                 let dy2 = -dy;
-
                 x = x1 + dx2;
                 y = y1 + dy2;
 
