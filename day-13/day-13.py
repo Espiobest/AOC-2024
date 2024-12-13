@@ -27,7 +27,8 @@ def count_tokens(part2=False):
         if part2:
             px += 10000000000000
             py += 10000000000000
-        # solve a_x * x' + b_x * y' = prize_x and a_y * x' + b_y * y' = prize_y
+        # solve a_x * x' + b_x * y' = prize_x and a_y * x' + b_y * y' = prize_y 
+        # thx wolfram
         x_sol = (bx * py - by * px) / (bx * ay - ax * by)
         y_sol = (py - ay * x_sol) / by
         if int(x_sol) != x_sol or int(y_sol) != y_sol:
